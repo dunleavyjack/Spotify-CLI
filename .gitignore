@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+
+# misc
+.env
+.env.local
+.DS_Store
+
+npm-debug.log*
+
+# Ignore built ts files
+dist/**/*
