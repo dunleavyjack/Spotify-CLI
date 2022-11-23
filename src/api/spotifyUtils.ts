@@ -1,7 +1,5 @@
 import { SpotifyHeader } from '../types';
-
-// TODO: Remove hardcoded sample authtoken.
-const authToken = process.env.SAMPLE_AUTH_TOKEN;
+const authToken = process.env.SAMPLE_AUTH_TOKEN; // Todo: Replace sample auth token with real one
 
 export const spotifyHeader: SpotifyHeader = {
     headers: {
