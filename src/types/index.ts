@@ -6,9 +6,8 @@ export type SpotifyHeader = {
     headers: SpotifyAuthorization;
 };
 
-export type CurrentSongResponse = {
-    name: string;
-    artist: string;
-    albumName: string;
-    status: number;
-};
+export interface SpotifyAccessToken {
+    access_token: string;
+    token_type: string;
+    expires_in: string;
+}
