@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 import { Command } from 'commander';
-import { back, login, next, now } from './commands/commands';
+import { back, login, next, now, pause, play } from './commands/commands';
 
 const program = new Command();
 
@@ -17,6 +17,16 @@ program
     .command('now')
     .description('Get the currently playing song')
     .action(now);
+
+program
+    .command('play')
+    .description('Resume playback on current song')
+    .action(play);
+
+program
+    .command('pause')
+    .description('Pause the currently playing song')
+    .action(pause);
 
 program
     .command('next')
